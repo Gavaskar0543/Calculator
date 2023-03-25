@@ -40,7 +40,16 @@ for(var i = 0; i<buttons.length;i++){
         operator = '%';
 
      }
-     
+     else if(value =='Del'){
+  var currentValue = display.textContent; 
+  display.innerText = currentValue.substring(0, currentValue.length - 4);
+
+     }
+     else if(value =='AC'){
+        display.innerText = "";
+       
+
+     }
      else if( value == '='){
         operand2 = parseFloat(display.textContent);
         display.innerText="";
