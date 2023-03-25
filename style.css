@@ -56,8 +56,9 @@ font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     box-shadow: 2px 2px 10px grey;
 }
 .zero{
-    color:red !important;
-    background-color:aquamarine;
+    
+    background-color:coral;
+    color:balck !important;
     width:120px !important;
 }
 #button{
