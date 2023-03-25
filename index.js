@@ -9,13 +9,17 @@ var operator = null;
 for(var i = 0; i<buttons.length;i++){
     buttons[i].addEventListener('click',function(){
     let value = this.getAttribute('data-value');
+    if(display.innerText.length < 10){
      display.innerText += value;
+    }
+    
      if(value =='+'){
         operand1 = parseFloat(display.textContent);
         display.innerText = "";
         operator = '+';
 
      }
+   
     else if(value =='-'){
         operand1 = parseFloat(display.textContent);
         display.innerText = "";
